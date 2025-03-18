@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // Single Page Apps for GitHub Pages
+        // This script takes the current URL and converts the path and query
+        // parameters into just a query parameter for the index.html page.
+        // This way the router will work properly on GitHub Pages.
+
+        // Extract the repository name (portfolio instead of portfolio-website)
+        const repositoryName = 'portfolio';
+        const l = window.location;
+
+        // Get the path after the repository name
+        const pathSegments = l.pathname.split('/');
+        const path = pathSegments.length > 2
+            ? pathSegments.slice(2).join('/')
+            : '';
+
+        // Redirect to index with the path as a query parameter
+        l.replace(
+            `${l.protocol}//${l.hostname}${l.port ? `:${l.port}` : ''}/${repositoryName}/?p=${path}${l.search ? `&${l.search.slice(1)}` : ''}${l.hash}`
+        );
+    </script>
+</head>
+
+<body>
+    <h1>Redirecting...</h1>
+</body>
+
+</html>
