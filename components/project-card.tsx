@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Project } from "@/data/projects";
 
 interface ProjectCardProps {
@@ -31,10 +32,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
                         </div>
                     </div>
                 </div>
-                <img
+                <Image
                     src={project.image}
                     alt={project.title}
-                    className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
             </div>
 

@@ -65,7 +65,7 @@ export function Navbar() {
                     <HoveredLink href="/">Home</HoveredLink>
                     <HoveredLink
                       href="#about"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToSection("about");
                       }}
@@ -74,7 +74,7 @@ export function Navbar() {
                     </HoveredLink>
                     <HoveredLink
                       href="#projects"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToSection("projects");
                       }}
@@ -83,7 +83,7 @@ export function Navbar() {
                     </HoveredLink>
                     <HoveredLink
                       href="#contact"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToSection("contact");
                       }}
@@ -96,7 +96,7 @@ export function Navbar() {
                   <div className="flex flex-col space-y-4 text-sm p-3">
                     <HoveredLink
                       href="#projects"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToProjectCategory("All Projects");
                       }}
@@ -105,7 +105,7 @@ export function Navbar() {
                     </HoveredLink>
                     <HoveredLink
                       href="#projects"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToProjectCategory("Full-Stack");
                       }}
@@ -114,7 +114,7 @@ export function Navbar() {
                     </HoveredLink>
                     <HoveredLink
                       href="#projects"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToProjectCategory("UI/UX Design");
                       }}
@@ -123,7 +123,7 @@ export function Navbar() {
                     </HoveredLink>
                     <HoveredLink
                       href="#projects"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToProjectCategory("Software Dev");
                       }}
@@ -136,7 +136,7 @@ export function Navbar() {
                   <div className="flex flex-col space-y-4 text-sm p-3">
                     <HoveredLink
                       href="#contact"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToSection("contact");
                       }}
@@ -145,7 +145,7 @@ export function Navbar() {
                     </HoveredLink>
                     <HoveredLink
                       href="#contact"
-                      onClick={(e) => {
+                      onClick={(e: { preventDefault: () => void; }) => {
                         e.preventDefault();
                         navigateToSection("contact");
                       }}

@@ -63,7 +63,7 @@ export function AboutSection() {
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About Me</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get to Know Me</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              I'm a passionate developer with a strong background in backend development, mobile app devlopment and a keen eye for design.
+              I&apos;m a passionate developer with a strong background in backend development, mobile app devlopment and a keen eye for design.
             </p>
           </div>
         </div>
@@ -79,7 +79,7 @@ export function AboutSection() {
                 Computer Science student seeking an internship to apply technical skills and gain hands-on experience. Proficient in Python, Java, HTML, JavaScript, Spring Boot, MySQL, PostgreSQL, Git, Firebase, Next.js, React, and Angular. Skilled in UI/UX design using Figma, with a creative mindset for generating innovative ideas. Passionate about learning, problem-solving, and contributing to impactful projects in a collaborative environment.
               </p>
               <p className="text-muted-foreground mt-4">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects,
+                When I&apos;m not coding, you can find me exploring new technologies, contributing to open-source projects,
                 or enjoying outdoor activities to maintain a healthy work-life balance.
               </p>
             </div>
@@ -132,16 +132,20 @@ export function AboutSection() {
                         >
                           <h5 className="text-sm font-semibold mt-4 mb-2">Core Modules</h5>
                           <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-1">
-                            {educationData[0].courses.map((course, idx) => (
-                              <li key={idx} className="text-xs text-muted-foreground flex items-start">
-                                <span className="text-primary mr-1.5">•</span> {course}
-                              </li>
-                            ))}
+                            {educationData[0]?.courses?.length ?? 0 > 0 ? (
+                              educationData[0]?.courses?.map((course, idx) => (
+                                <li key={idx} className="text-xs text-muted-foreground flex items-start">
+                                  <span className="text-primary mr-1.5">•</span> {course}
+                                </li>
+                              ))
+                            ) : (
+                              <li className="text-xs text-muted-foreground">No courses available</li>
+                            )}
                           </ul>
 
                           <h5 className="text-sm font-semibold mt-4 mb-2">Additional Certifications</h5>
                           <ul className="space-y-1">
-                            {educationData[0].additionalCourses.map((course, idx) => (
+                            {educationData[0]?.additionalCourses?.map((course, idx) => (
                               <li key={idx} className="text-xs text-muted-foreground flex items-start">
                                 <span className="text-primary mr-1.5">•</span>
                                 {course.name} - <span className="italic">{course.institution}</span>
@@ -159,7 +163,7 @@ export function AboutSection() {
                         >
                           <h5 className="text-sm font-semibold mt-4 mb-2">Key Achievements</h5>
                           <ul className="space-y-1">
-                            {educationData[1].achievements.map((achievement, idx) => (
+                            {educationData[1]?.achievements?.map((achievement, idx) => (
                               <li key={idx} className="text-xs text-muted-foreground flex items-start">
                                 <span className="text-primary mr-1.5">•</span> {achievement}
                               </li>

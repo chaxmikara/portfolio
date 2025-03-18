@@ -133,7 +133,7 @@ export function SkillsSection() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed dark:text-gray-400"
             >
-              Here's a breakdown of my technical expertise and proficiency levels
+              Here&apos;s a breakdown of my technical expertise and proficiency levels
             </motion.p>
           </div>
 

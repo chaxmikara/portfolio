@@ -179,7 +179,7 @@ export function FooterSection() {
                     <motion.div variants={itemVariants} className="flex flex-col space-y-4">
                         <h2 className="text-2xl font-bold">About Me</h2>
                         <p className="text-gray-300">
-                            I'm a passionate full-stack developer dedicated to creating exceptional digital experiences with cutting-edge technologies.
+                            I&apos;m a passionate full-stack developer dedicated to creating exceptional digital experiences with cutting-edge technologies.
                         </p>
                         <div className="flex space-x-3 mt-4 flex-wrap">
                             {socialLinks.map((link, index) => (

@@ -14,7 +14,7 @@ export function HeroSection() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="relative z-20 text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Hi, I'm{" "}
+                  Hi, I&apos;m{" "}
                   <div className="mt-2">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-violet-500 to-pink-500">
                       Chamikara <br /> Kodithuwakku
