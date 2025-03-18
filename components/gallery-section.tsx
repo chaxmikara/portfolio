@@ -1,101 +1,91 @@
 "use client";
+
 import React from "react";
-import { HeroParallax } from "E:/my_projects/project/components/ui/hero-parallax";
+import { HeroParallax } from "@/components/ui/hero-parallax";
 
 export function GallerySection() {
-    return <HeroParallax products={products} />;
+    // Sample product data for the gallery
+    const products = [
+        {
+            title: "Collaborative Project",
+            link: "#",
+            thumbnail: "/images/gallery/project1.jpg",
+        },
+        {
+            title: "Team Hackathon",
+            link: "#",
+            thumbnail: "/images/gallery/project2.jpg",
+        },
+        {
+            title: "Design Workshop",
+            link: "#",
+            thumbnail: "/images/gallery/project3.jpg",
+        },
+        {
+            title: "Code Review Session",
+            link: "#",
+            thumbnail: "/images/gallery/project4.jpg",
+        },
+        {
+            title: "UI/UX Research",
+            link: "#",
+            thumbnail: "/images/gallery/project5.jpg",
+        },
+        {
+            title: "Development Meeting",
+            link: "#",
+            thumbnail: "/images/gallery/project6.jpg",
+        },
+        {
+            title: "Product Launch",
+            link: "#",
+            thumbnail: "/images/gallery/project7.jpg",
+        },
+        {
+            title: "Tech Conference",
+            link: "#",
+            thumbnail: "/images/gallery/project8.jpg",
+        },
+        {
+            title: "Team Building",
+            link: "#",
+            thumbnail: "/images/gallery/project9.jpg",
+        },
+        {
+            title: "Client Presentation",
+            link: "#",
+            thumbnail: "/images/gallery/project10.jpg",
+        },
+        {
+            title: "Award Ceremony",
+            link: "#",
+            thumbnail: "/images/gallery/project11.jpg",
+        },
+        {
+            title: "Project Milestone",
+            link: "#",
+            thumbnail: "/images/gallery/project12.jpg",
+        },
+        {
+            title: "Success Celebration",
+            link: "#",
+            thumbnail: "/images/gallery/project13.jpg",
+        },
+        {
+            title: "Remote Collaboration",
+            link: "#",
+            thumbnail: "/images/gallery/project14.jpg",
+        },
+        {
+            title: "Learning Workshop",
+            link: "#",
+            thumbnail: "/images/gallery/project15.jpg",
+        },
+    ];
+
+    return (
+        <div className="bg-background py-12">
+            <HeroParallax products={products} />
+        </div>
+    );
 }
-export const products = [
-    {
-        title: "Industpro 3.0",
-        link: "#",
-        thumbnail: "/images/gallery/pic1.png",
-    },
-    {
-        title: "IX Final Designthon",
-        link: "#",
-        thumbnail: "/images/gallery/pic2.jpg",
-    },
-    {
-        title: "HAXTREME 3.0",
-        link: "#",
-        thumbnail: "/images/gallery/pic3.jpg",
-    },
-    {
-        title: "KNGINE 19",
-        link: "#",
-        thumbnail: "/images/gallery/pic4.jpg",
-    },
-    {
-        title: "Project Five",
-        link: "#",
-        thumbnail: "/images/gallery/pic5.jpg",
-    },
-    {
-        title: "Project Six",
-        link: "#",
-        thumbnail: "/images/gallery/pic6.jpg",
-    },
-    {
-        title: "KNGINE 20",
-        link: "#",
-        thumbnail: "/images/gallery/pic7.jpg",
-    },
-    {
-        title: "IX Final Designthon",
-        link: "#",
-        thumbnail: "/images/gallery/pic8.jpg",
-    },
-    {
-        title: "IEEE XTREME",
-        link: "#",
-        thumbnail: "/images/gallery/pic9.jpg",
-    },
-    {
-        title: "Project Ten",
-        link: "#",
-        thumbnail: "/images/gallery/pic10.jpg",
-    },
-    {
-        title: "Project Eleven",
-        link: "#",
-        thumbnail: "/images/gallery/pic11.jpg",
-    },
-    {
-        title: "Project Twelve",
-        link: "#",
-        thumbnail: "/images/gallery/pic12.jpg",
-    },
-    {
-        title: "Project Thirteen",
-        link: "#",
-        thumbnail: "/images/gallery/pic13.jpg",
-    },
-    {
-        title: "Project Fourteen",
-        link: "#",
-        thumbnail: "/images/gallery/pic14.jpg",
-    },
-    {
-        title: "Project Fifteen",
-        link: "#",
-        thumbnail: "/images/gallery/pic15.jpg",
-    },
-    {
-        title: "Project Sixteen",
-        link: "#",
-        thumbnail: "/images/gallery/pic16.jpg",
-    },
-    {
-        title: "Project Seventeen",
-        link: "#",
-        thumbnail: "/images/gallery/pic17.jpg",
-    },
-    {
-        title: "Project Eighteen",
-        link: "#",
-        thumbnail: "/images/gallery/pic18.jpg",
-    }
-   
-    
-];
