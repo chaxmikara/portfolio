@@ -4,8 +4,8 @@ import { AboutSection } from "@/components/about-section";
 import { ProjectsSection } from "@/components/projects-section";
 import { SkillsSection } from "@/components/skills-section";
 import { ContactSection } from "@/components/contact-section";
-import { Footer } from "@/components/footer";
 import { GallerySection } from "@/components/gallery-section";
+import { FooterSection } from "@/components/footer-section";
 
 export default function Home() {
   return (
@@ -16,8 +16,7 @@ export default function Home() {
       <GallerySection />
       <ProjectsSection />
       <SkillsSection />
-      <ContactSection />
-      <Footer />
+      <FooterSection />
     </main>
   );
 }
